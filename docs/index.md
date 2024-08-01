@@ -8,7 +8,7 @@ hero:
   tagline: 不以涨薪为目的学习就是甩流氓
   actions:
     - theme: brand
-      text: Vue中的权限管理
+      text: 前端起飞之路
       link: /vue-admin中的权限管理
     - theme: alt
 
