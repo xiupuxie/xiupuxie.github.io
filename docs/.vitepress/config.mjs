@@ -17,6 +17,7 @@ export default defineConfig({
         items: [
           { text: '项目中权限问题', link: '/vue-admin中的权限管理' },
           { text: '性能指标', link: '/性能指标' },
+          { text: '用Composition API 后代码变得更乱了？', link: '/用Composition API 后代码变得更乱了？' },
           { text: '浏览器缓存策略', link: '/浏览器的缓存策略' },
           { text: '关于css中定位的知识', link: '/关于css中定位的知识' },
           { text: '为什么要将图片转成Base64', link: '/为什么要将图片转成Base64' },
