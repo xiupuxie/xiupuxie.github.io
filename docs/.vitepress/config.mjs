@@ -10,13 +10,13 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '家', link: '/' },
-      { text: '示例', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '文档', link: '/vue-admin中的权限管理' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '技术笔记',
         items: [
           { text: '项目中权限问题', link: '/vue-admin中的权限管理' },
           { text: '权限模型封装和改造前端权限系统', link: '/权限模型封装和改造前端权限系统' },
@@ -25,7 +25,6 @@ export default defineConfig({
           { text: '浏览器缓存策略', link: '/浏览器的缓存策略' },
           { text: '关于css中定位的知识', link: '/关于css中定位的知识' },
           { text: '为什么要将图片转成Base64', link: '/为什么要将图片转成Base64' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
         ]
       }
     ],
