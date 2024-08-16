@@ -5,6 +5,9 @@ export default defineConfig({
   title: "我的前端生涯",
   description: "A VitePress Site",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '家', link: '/' },
