@@ -25,6 +25,7 @@ export default defineConfig({
           { text: '浏览器缓存策略', link: '/浏览器的缓存策略' },
           { text: '关于css中定位的知识', link: '/关于css中定位的知识' },
           { text: '为什么要将图片转成Base64', link: '/为什么要将图片转成Base64' },
+          { text: '写了个hooks，useRequest详解', link: '/写了个hooks，useRequest详解' },
         ]
       }
     ],
