@@ -26,6 +26,7 @@ export default defineConfig({
           { text: '关于css中定位的知识', link: '/关于css中定位的知识' },
           { text: '为什么要将图片转成Base64', link: '/为什么要将图片转成Base64' },
           { text: '写了个hooks，useRequest详解', link: '/写了个hooks，useRequest详解' },
+          { text: '组合式api和选项式api区别', link: '/组合式api和选项式api区别' },
         ]
       }
     ],
