@@ -1,36 +1,30 @@
 import { defineConfig } from 'vitepress'
+import vitepressBar from 'vite-plugin-vitepress-bar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "我的前端生涯",
   description: "A VitePress Site",
+  vite: {
+    plugins: [
+      vitepressBar({
+        filter(item) {
+          return /^(?!.*(?:\/\.vitepress(?:\/|$)|\/\.git(?:\/|$)|\/node_modules(?:\/|$)|\/dist(?:\/|$))).*$/.test(item.path)
+        },
+        complete(bar) {
+          bar.nav = [
+            { text: '首页', link: '/' },
+            { text: '文档', link: bar.nav[0].link }
+          ]
+          return bar
+        }
+      })
+    ]
+  },
   themeConfig: {
     search: {
       provider: 'local'
     },
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '文档', link: '/vue-admin中的权限管理' }
-    ],
-
-    sidebar: [
-      {
-        text: '技术笔记',
-        items: [
-          { text: '项目中权限问题', link: '/vue-admin中的权限管理' },
-          { text: '权限模型封装和改造前端权限系统', link: '/权限模型封装和改造前端权限系统' },
-          { text: '性能指标', link: '/性能指标' },
-          { text: '用Composition API 后代码变得更乱了？', link: '/用Composition API 后代码变得更乱了？' },
-          { text: '浏览器缓存策略', link: '/浏览器的缓存策略' },
-          { text: '关于css中定位的知识', link: '/关于css中定位的知识' },
-          { text: '为什么要将图片转成Base64', link: '/为什么要将图片转成Base64' },
-          { text: '写了个hooks，useRequest详解', link: '/写了个hooks，useRequest详解' },
-          { text: '组合式api和选项式api区别', link: '/组合式api和选项式api区别' },
-        ]
-      }
-    ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/xiupuxie' }
     ],
