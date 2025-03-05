@@ -8,6 +8,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "vite-plugin-vitepress-bar": "^0.0.2"
+    "vite-plugin-vitepress-bar": "^0.0.3"
   }
 }
